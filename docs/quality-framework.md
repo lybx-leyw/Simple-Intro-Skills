@@ -6,25 +6,25 @@ A deep dive into how Intro evaluates quality — the dimensions, weights, ration
 
 ### 1. Honesty over Vanity
 
-Intro is designed to **resist grade inflation**. A score of 60/100 with honest evidence is more valuable than a 90/100 with hand-waving.
+Intro tries to **avoid grade inflation**. A score of 60/100 with honest evidence is more useful than a 90/100 with hand-waving.
 
-- **Critical Issues** are strictly defined — only genuine errors or safety problems. Everything else is Minor.
+- **Critical Issues** are limited to genuine errors or safety problems. Other issues go in Minor.
 - **No Critical Issues ≠ high score**. You can score 65/100 with zero criticals if the work is merely average.
-- Evidence column **must** quote ≥5 words from the output. No shortcuts like "see above" or "overall good".
+- Evidence column **should** quote ≥5 words from the output, rather than shortcuts like "see above" or "overall good".
 
-### 2. Fixed Weights
+### 2. Fixed Weights (by Default)
 
-You cannot adjust dimension weights. This prevents gaming the system:
+The default weights are fixed. This helps prevent gaming the system:
 
-- Code always weights **Correctness at 35%** — correct code matters more than beautiful code
-- Factual answers always weight **Accuracy at 30%** — being wrong is worse than being incomplete
-- Translations always weight **Semantic Accuracy at 40%** — fidelity matters most
+- Code weights **Correctness at 35%** — correct code arguably matters more than beautiful code
+- Factual answers weight **Accuracy at 30%** — being wrong is generally worse than being incomplete
+- Translations weight **Semantic Accuracy at 40%** — fidelity tends to matter most
 
-The weights encode a value judgment about what quality means for each output type.
+The weights reflect one possible view of what quality means for each output type.
 
 ### 3. Evidence-Based Scoring
 
-Every point must be justified by a specific quote:
+Every point should be backed by a specific quote:
 
 | ❌ Bad | ✅ Good |
 |--------|---------|
@@ -99,12 +99,12 @@ Every point must be justified by a specific quote:
 
 | Score | Meaning | What to Do |
 |-------|---------|------------|
-| 90-100 | **Exceptional** — professional-grade | Ship it |
+| 90-100 | **Exceptional** — professional-grade | Ready to use |
 | 75-89 | **Good** — minor optimizations possible | One polish pass |
-| 60-74 | **Fair** — clear improvement areas | Plan revisions |
-| 40-59 | **Needs work** — significant gaps | Rework required |
-| 20-39 | **Poor** — multiple critical issues | Major rewrite |
-| 0-19 | **Very poor** — essentially unusable | Start over |
+| 60-74 | **Fair** — clear improvement areas | Consider revisions |
+| 40-59 | **Needs work** — significant gaps | Rework recommended |
+| 20-39 | **Poor** — multiple critical issues | Likely needs rewrite |
+| 0-19 | **Very poor** — essentially unusable | Better to start over |
 
 ---
 
@@ -117,7 +117,7 @@ A **Critical** issue is limited to:
 3. **Logic collapse** — reasoning chain has a fatal gap
 4. **Completely unusable** — output can't be used as-is
 
-Everything else — style preferences, missing niceties, suboptimal approaches — goes in **Minor**. This strict definition prevents grade inflation through "creative" critical issue labeling.
+Other issues — style preferences, missing niceties, suboptimal approaches — go in **Minor**. This helps prevent grade inflation through "creative" critical issue labeling.
 
 ---
 
@@ -132,10 +132,10 @@ Everything else — style preferences, missing niceties, suboptimal approaches �
 
 ## Adapting for Your Domain
 
-The six built-in types cover most scenarios. For edge cases:
+The six built-in types cover many common scenarios. For edge cases:
 - **General/Mixed** — when the output doesn't fit cleanly. Note the ambiguity.
 - **Per-user dimension** — if a user asks to scrutinize a specific aspect, double its weight and note `(per user)`
-- **New types** — the framework is extensible. Add rows following the same pattern.
+- **New types** — the framework can be extended. Add rows following the same pattern.
 
 ---
 

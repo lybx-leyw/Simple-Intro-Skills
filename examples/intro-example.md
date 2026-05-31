@@ -99,7 +99,7 @@ Users can request a fix based on Intro's assessment:
 ```
 你: fix it
 
-# Claude produces a revised version addressing Critical and Minor issues
+# Claude generates a revised version addressing Critical and Minor issues
 ```
 
 This is the bridge between Intro (evaluation only) and IoE/iloop (improvement). Intro identifies the gaps; the user decides how to act.

@@ -59,15 +59,15 @@ Each skill is one self-contained file. No dependencies, no build step. Drop it i
 - **Portable** — works across machines, syncs via dotfiles
 - **Immutable** — the SKILL.md is the source of truth
 
-### 2. Fixed Weights Are Non-Negotiable
+### 2. Fixed Weights (by Default)
 
-The weights encode a value judgment. Code correctness (35%) should matter more than code documentation (10%). Factual accuracy (30%) should matter more than conciseness (15%). Allowing users to change weights would let them tailor the system for flattering scores.
+The weights encode a value judgment. Code correctness (35%) arguably matters more than code documentation (10%). Factual accuracy (30%) perhaps more than conciseness (15%). Allowing weights to be freely changed could let users tailor the system for flattering scores, so we keep them fixed — but feel free to adjust if your use case calls for it.
 
 ### 3. Edge Cases Are Documented
 
 Every skill has an edge case table. The most common failure mode for AI agent prompts is unhandled edge cases — empty input, context overflow, unclear type, user interruption. These aren't afterthoughts; they're part of the spec.
 
-## What the Trilogy Is NOT
+## Limitations
 
 - **Not a benchmark** — evaluates a specific output, not general model capability
 - **Not a replacement for human review** — especially for high-stakes content
@@ -76,7 +76,7 @@ Every skill has an edge case table. The most common failure mode for AI agent pr
 
 ## Future Directions
 
-Possible extensions: introspection logger, multi-model IoE, quality dashboard, skill composition. But the core trilogy is deliberately complete: Intro measures. IoE compares. iloop automates. Everything else is optional.
+Possible extensions: introspection logger, multi-model IoE, quality dashboard, skill composition.
 
 ---
 

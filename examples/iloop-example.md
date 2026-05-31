@@ -35,7 +35,7 @@ Adds input validation, monotonic clock (`performance.now()`), precise wait calcu
 
 Completes all edge cases, comprehensive JSDoc, getter for remaining tokens. Self-evaluates at 94/100.
 
-**Decision:** Quality threshold met (≥90). Terminate.
+**Decision:** Quality threshold met (≥90). Stopping.
 
 ---
 
@@ -166,4 +166,4 @@ The RateLimiter code was audited against token bucket algorithm specifications a
 
 **Decision:** No improvement for 3 consecutive rounds. Early termination.
 
-**Result:** Returns the best version (Round 2) with plateau note. This is correct behavior — some tasks (especially creative ones) don't benefit from mechanical iteration.
+**Result:** Returns the best version (Round 2) with plateau note. This is expected — some tasks (especially creative ones) don't always benefit from mechanical iteration.

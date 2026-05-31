@@ -1,9 +1,9 @@
 ---
 name: iloop
 description: >
-  Self-assessing iterative improvement agent — fully automatic loop with
+  Self-assessing iterative improvement agent — automatic loop with
   /Intro-style quality self-assessment. Execute → self-assess → auto-decide
-  continue or stop. No manual intervention needed.
+  continue or stop. Aims to minimize manual intervention.
   Trigger: "iteratively improve", "keep working on this", "make this better",
   "auto refine", "自我迭代", "自动优化", "继续改进", or any task where the
   answer should be automatically refined until a quality threshold is met.

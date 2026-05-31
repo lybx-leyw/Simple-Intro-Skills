@@ -2,7 +2,7 @@
 
 **Measure.** **Compare.** **Iterate.** **Automate.**
 
-Three [Claude Code](https://claude.ai/code) skills that form a progressive quality system for AI-generated content: evidence-based self-assessment, iterative refinement through answer comparison, and fully autonomous improvement loops.
+Three [Claude Code](https://claude.ai/code) skills for AI-generated content: evidence-based self-assessment, iterative refinement through answer comparison, and autonomous improvement loops.
 
 [![Skill: Intro](https://img.shields.io/badge/Skill-Intro-6A4C93)](skills/Intro/SKILL.md)
 [![Skill: IoE](https://img.shields.io/badge/Skill-IoE-1982C4)](skills/IoE/SKILL.md)
@@ -18,7 +18,7 @@ Each skill builds on the one before it. Use them independently or as a progressi
 |---|-------|-------------|-----------|
 | 1 | **Intro** | Scores any output across 6 types with evidence-based, weighted dimensions | **Evaluate** — "How good is this?" |
 | 2 | **IoE** (If-or-Else) | Iteratively refines answers by detecting stability, drift, and oscillation patterns | **Guide** — "Keep going / stop / refine" |
-| 3 | **iloop** | Fully autonomous execute → self-assess → decide → continue/terminate loop | **Walk away** — "Make this great" |
+| 3 | **iloop** | Autonomous execute → self-assess → decide → continue/terminate loop | **Walk away** — "Make this great" |
 
 ## Quick Start
 
@@ -67,7 +67,7 @@ ln -s $(pwd)/skills/iloop ~/.claude/skills/iloop
 你: yes → self-evaluation
 ```
 
-**iloop — Fully automated iteration:**
+**iloop — Autonomous iteration:**
 ```
 你: /iloop 写一份生产就绪的错误处理中间件
     Round 1: 72/100 → Round 2: 84/100 → Round 3: 93/100 ✓
@@ -120,7 +120,7 @@ This implementation extends the original "If-or-Else" confidence evaluation stra
 
 ## About
 
-Created by **绿意不息** (Evergreen), Zhejiang University, with [Claude Code](https://claude.ai/code). These skills grew from a simple observation: LLM outputs vary, and structured self-evaluation is the most reliable way to control that variance.
+Created by **绿意不息** (Evergreen), a student at Zhejiang University, with [Claude Code](https://claude.ai/code). These skills grew from using LLMs daily and wanting a more structured way to evaluate and improve their output.
 
 ## Contributing
 

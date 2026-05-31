@@ -10,7 +10,7 @@
 
 **Round 1:**
 
-Claude produces an answer covering: communication overhead, DevOps burden, premature decomposition.
+Claude generates an answer covering: communication overhead, DevOps burden, premature decomposition.
 
 > **Claude asks:** 继续优化？(yes=接受并自评 / no=下一轮 / stop=停止)
 
@@ -24,8 +24,8 @@ no
 
 Claude reviews previous answer and produces a revised version. Now includes: organizational Conway's Law implications, cognitive load per developer, database complexity. The answer is different — drift detected.
 
-> **Answer drift detected.**  
-> no=继续 / refine=精炼 / stop=停止
+**Answer drift detected.**  
+no=继续 / refine=精炼 / stop=停止
 
 **User:**
 
@@ -52,7 +52,7 @@ Claude consolidates all three answers, synthesizing the best points from each:
 
 ```
 ## ANSWER ##
-微服务在中小型团队失败的核心原因（依据 Team Topologies、Martin Fowler、Sam Newman 及多项行业案例研究）：
+微服务在中小型团队失败的可能原因（参考 Team Topologies、Martin Fowler、Sam Newman 及相关行业案例）：
 
 1. 认知负载失衡——微服务增加无关认知负载（网络通信、分布式事务、服务边界），在小团队中与业务价值负载竞争有限的认知资源
 2. 基础设施成本——K8s + 可观测性堆栈对 <10 人团队消耗约 10-25% 的工程能力，相当于 0.5-1 个全职人力的机会成本
@@ -64,7 +64,7 @@ Claude consolidates all three answers, synthesizing the best points from each:
 ## END ##
 ```
 
-> **Stable. yes=接受并自评 / no=继续 / stop=停止**
+**Stable. yes=接受并自评 / no=继续 / stop=停止**
 
 **User:**
 
@@ -74,7 +74,7 @@ yes
 
 **Self-Evaluation (CoT):** Claude scores each dimension, produces Overall: 85/100.
 
-> **还需优化？(yes=重新循环 / stop=结束)**
+> **还需优化？(yes=继续 / stop=结束)**
 
 **User:**
 
@@ -138,4 +138,4 @@ When alternating A→B→A→B:
 振荡 [A]↔[B] 强烈建议refine
 ```
 
-This means the model is genuinely uncertain about which framing is correct. `refine` forces a synthesis that usually resolves the conflict.
+This means the model is uncertain about which framing is correct. `refine` forces a synthesis that usually resolves the conflict.

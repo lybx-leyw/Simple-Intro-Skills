@@ -1,6 +1,6 @@
 # Security Policy
 
-These are Claude Code skills — they define agent behavior through natural language instructions, not executable code. Risks are limited to the skill's prompt injection surface.
+These are Claude Code skills — they define agent behavior through natural language instructions, not executable code. The main risk is the skill's prompt injection surface.
 
 ## Reporting
 

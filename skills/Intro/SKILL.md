@@ -1,7 +1,7 @@
 ---
 name: Intro
 description: >
-  Quality self-assessment that appends honest, evidence-based scoring. NOT a revision loop.
+  Quality self-assessment that appends evidence-based scoring. NOT a revision loop.
   Trigger: /Intro, 自评, 自省, 自我评估, "evaluate this", "score this", "rate my answer",
   "how good is this", any explicit quality-check, or when user appends /Intro/自评 to a query.
   Compatible with IoE.

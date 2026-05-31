@@ -117,9 +117,9 @@ This appends a structured self-assessment to your conversation.
 
 ---
 
-## Progressive Workflow
+## Suggested Workflow
 
-The most powerful way to use the trilogy:
+One way to combine the three skills:
 
 ```
 1. /Intro  → Evaluate output (find gaps)

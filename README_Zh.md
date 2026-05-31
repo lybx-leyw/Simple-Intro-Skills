@@ -2,8 +2,8 @@
 
 **测量。** **比较。** **迭代。** **自动化。**
 
-三个 [Claude Code](https://claude.ai/code) skill，构成一个渐进式 AI 输出质量控制系统：
-基于证据的自我评估、通过答案比较的迭代精炼、以及全自主改进循环。
+三个 [Claude Code](https://claude.ai/code) skill，围绕 AI 输出的质量做一些尝试：
+基于证据的自我评估、通过答案比较的迭代精炼、以及自主改进循环。
 
 [![Skill: Intro](https://img.shields.io/badge/Skill-Intro-6A4C93)](skills/Intro/SKILL.md)
 [![Skill: IoE](https://img.shields.io/badge/Skill-IoE-1982C4)](skills/IoE/SKILL.md)
@@ -123,7 +123,7 @@ IoE skill 基于以下学术工作：
 
 **绿意不息** (Evergreen)，浙江大学学生 · 使用 [Claude Code](https://claude.ai/code) (Anthropic) 构建
 
-这三个 skill 源自日常使用中的观察：LLM 输出存在方差，而结构化自我评估是控制方差最可靠的方式。
+这三个 skill 是在日常使用中慢慢摸索出来的，还有很多不足，欢迎提建议。
 
 ## 贡献
 

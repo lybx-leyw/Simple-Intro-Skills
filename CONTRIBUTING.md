@@ -21,8 +21,8 @@
 
 ## Principles
 
-- Skill definitions must be self-contained — a `SKILL.md` should work standalone.
-- Edge cases matter — document them in a table.
+- Skill definitions should be self-contained — a `SKILL.md` ideally works standalone.
+- Edge cases matter — consider documenting them in a table.
 - Chinese for skill instructions; English for repo documentation.
 
 ---
